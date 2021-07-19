@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker run -e CI=true mchoi2000/exercise-logs-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "exercises"
+  env: "Exercises-env"
+  bucket_name: "elasticbeanstalk-us-east-1-579208050789"
+  bucket_path: "exercises"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
