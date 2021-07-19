@@ -32,7 +32,7 @@ const ExercisesList = () => {
 
   return (
     <div>
-      <h3>Exercise Logs</h3>
+      <h3>Exercises</h3>
       <table className='table'>
         <thead className='thead-light'>
           <tr>
