@@ -1,0 +1,14 @@
+.git
+.DS_Store
+.gitignore
+Dockerfile
+Dockerfile.*
+env.*
+node_modules/*
+
+# client
+client/.git
+client/.gitignore
+client/.DS_Store
+client/env.*
+client/node_modules/*

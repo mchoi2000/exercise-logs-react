@@ -1,0 +1,13 @@
+# Specify base image
+FROM node:14-alpine
+
+# Add a user working space
+WORKDIR /app
+
+# Install dependencies
+COPY package.json .
+RUN npm install
+COPY . .
+
+# Run default command
+CMD ["npm", "run", "dev"]
