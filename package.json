@@ -8,7 +8,7 @@
     "server": "nodemon server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm run build --prefix client",
-    "test": "DEBUG=true nyc mocha ./test/*.test.js --exit --inspect=0.0.0.0:9229 --timeout 2000",
+    "test": "DEBUG=true nyc mocha tests/*.test.js --exit --inspect=0.0.0.0:9229 --timeout 2000",
     "start": "node server"
   },
   "keywords": [],
