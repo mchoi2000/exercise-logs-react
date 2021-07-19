@@ -8,6 +8,7 @@ before_install:
 script:
   - docker run -e CI=true mchoi2000/exercise-logs-react npm run test
 
+# deploy to EB, Dockerfile by default
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"

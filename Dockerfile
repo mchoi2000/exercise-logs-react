@@ -8,6 +8,7 @@ COPY . .
 
 # Configure web server
 FROM nginx
+EXPOSE 3000
 COPY --from=0 /app/client/build /usr/share/nginx/html
 
 # Test
