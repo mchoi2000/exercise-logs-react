@@ -1,5 +1,5 @@
 # Specify base image
-FROM node:14-alpine
+FROM node:alpine
 
 # Add a user working space
 WORKDIR /app
@@ -10,4 +10,7 @@ RUN npm install
 COPY . .
 
 # Run default command
-CMD ["npm", "run", "dev"]
+# CMD ["npm", "run", "dev"]
+
+# Run test
+CMD ["npm", "run", "test"]
