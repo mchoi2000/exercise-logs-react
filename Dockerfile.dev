@@ -10,7 +10,4 @@ RUN npm install
 COPY . .
 
 # Run default command
-# CMD ["npm", "run", "dev"]
-
-# Run test
-CMD ["npm", "run", "test"]
+CMD ["npm", "run", "dev"]
